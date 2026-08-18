@@ -10,6 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="style.css">
     <script>
@@ -148,10 +149,13 @@
                         <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-python text-yellow-500 text-4xl mb-2"></i>
                             <p>Python</p>
                         </div>
+                        <div class="skill-card  flex flex-col items-center text-center"><i class="fas fa-bolt text-teal-500 text-4xl mb-2"></i>
+                            <p>FastAPI</p>
+                        </div>
                         <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-js text-yellow-500 text-4xl mb-2"></i>
                             <p>JavaScript</p>
                         </div>
-                        <div class="skill-card  flex flex-col items-center text-center"><i class="fas fa-database text-green-500 text-4xl mb-2"></i>
+                        <div class="skill-card  flex flex-col items-center text-center"><i class="devicon-mongodb-plain colored text-4xl mb-2"></i>
                             <p>MongoDB</p>
                         </div>
                          <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-react text-blue-400 text-4xl mb-2"></i>
@@ -160,8 +164,11 @@
                         <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-aws text-orange-400 text-4xl mb-2"></i>
                             <p>AWS</p>
                         </div>
-                        <div class="skill-card  flex flex-col items-center text-center"><i class="fas fa-server text-blue-600 text-4xl mb-2"></i>
+                        <div class="skill-card  flex flex-col items-center text-center"><i class="fas fa-database text-blue-600 text-4xl mb-2"></i>
                             <p>MySQL</p>
+                        </div>
+                        <div class="skill-card  flex flex-col items-center text-center"><i class="devicon-postgresql-plain colored text-4xl mb-2"></i>
+                            <p>PostgreSQL</p>
                         </div>
                         <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-node-js text-green-600 text-4xl mb-2"></i>
                             <p>Node.js</p>
@@ -169,11 +176,14 @@
                         <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-figma text-purple-500 text-4xl mb-2"></i>
                             <p>Figma</p>
                         </div>
-                        <div class="skill-card  flex flex-col items-center text-center"><i class="fas fa-wind text-cyan-400 text-4xl mb-2"></i>
+                        <div class="skill-card  flex flex-col items-center text-center"><i class="devicon-tailwindcss-original colored text-4xl mb-2"></i>
                             <p>Tailwind</p>
                         </div>
                         <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-git-alt text-orange-600 text-4xl mb-2"></i>
                             <p>Git</p>
+                        </div>
+                        <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-github text-slate-800 dark:text-slate-200 text-4xl mb-2"></i>
+                            <p>GitHub</p>
                         </div>
                     </div>
                 </div>
@@ -184,12 +194,11 @@
                     </h3>
                     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
                        
-                        <div class="skill-card  flex flex-col items-center text-center"><i class="fab fa-bootstrap text-purple-600 text-4xl mb-2"></i>
-                            <p class="">Bootstrap</p>
-                        </div>
-                       
                         <div class="skill-card  flex flex-col items-center text-center "><i class="fab fa-docker text-sky-400 text-4xl mb-2"></i>
                             <p>Docker</p>
+                        </div>
+                        <div class="skill-card  flex flex-col items-center text-center"><i class="devicon-kubernetes-plain colored text-4xl mb-2"></i>
+                            <p>Kubernetes</p>
                         </div>
 
                     </div>
@@ -199,14 +208,67 @@
     </section>
 
 
-    <!-- Projects Section with Loader -->
+    <!-- Projects Section -->
     <section id="projects" class="py-24 px-6">
-        <div class="max-w-7xl mx-auto text-center">
+        <div class="max-w-7xl mx-auto">
             <h3 class="text-4xl font-black mb-12">Projects</h3>
-            <div id="project-container" class="grid md:grid-cols-2 gap-8">
-                <!-- Skeleton Loader will show here initially -->
-                <div class="animate-pulse bg-slate-200 dark:bg-slate-800 h-64 rounded-3xl"></div>
-                <div class="animate-pulse bg-slate-200 dark:bg-slate-800 h-64 rounded-3xl"></div>
+            <div id="project-container" class="grid gap-8 md:grid-cols-2">
+                <div class="rounded-[2rem] bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-500 p-px shadow-xl shadow-blue-500/15"
+                    data-aos="fade-up">
+                    <article class="group flex h-full flex-col overflow-hidden rounded-[1.95rem] bg-slate-950 text-white">
+                        <div class="relative h-44 overflow-hidden sm:h-48">
+                            <img src="./pic/pocket-lawyer.png"
+                                alt="Pocket Lawyer legal technology platform home page"
+                                class="h-full w-full object-cover object-left-top transition-transform duration-700 group-hover:scale-[1.025]">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-slate-950/10">
+                            </div>
+
+                            <div class="absolute left-4 right-4 top-4 flex items-center justify-between">
+                                <span
+                                    class="rounded-full border border-white/20 bg-slate-950/70 px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.15em] text-cyan-300 backdrop-blur-md">
+                                    Featured Project
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-slate-950/70 px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-wider text-emerald-300 backdrop-blur-md">
+                                    <span class="h-2 w-2 animate-pulse rounded-full bg-emerald-400"></span>
+                                    Live
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-1 flex-col p-5">
+                            <p class="mb-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-cyan-300">
+                                LegalTech / Generative AI
+                            </p>
+                            <h4 class="mb-2 text-2xl font-black tracking-tight">Pocket Lawyer</h4>
+                            <p class="mb-4 text-sm leading-5 text-slate-300">
+                                A source-grounded Sri Lankan legal platform with multilingual AI guidance, citations
+                                and verified lawyer discovery.
+                            </p>
+
+                            <div class="mb-4 flex flex-wrap gap-1.5" aria-label="Pocket Lawyer technology stack">
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[0.7rem] text-slate-200">React</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[0.7rem] text-slate-200">FastAPI</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[0.7rem] text-slate-200">PostgreSQL</span>
+                                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[0.7rem] text-slate-200">NVIDIA AI (RAG)</span>
+                            </div>
+
+                            <div class="mt-auto grid gap-2 sm:grid-cols-2">
+                                <a href="https://pocketlawyer.site" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-3 py-2.5 text-sm font-black text-slate-950 transition-all hover:-translate-y-0.5 hover:bg-cyan-100">
+                                    Live Project
+                                    <i class="fas fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+                                </a>
+                                <a href="./docs/pocket-lawyer-analysis.pdf" target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-2.5 text-sm font-bold text-white transition-all hover:-translate-y-0.5 hover:border-cyan-300 hover:text-cyan-300">
+                                    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                                    Analysis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
