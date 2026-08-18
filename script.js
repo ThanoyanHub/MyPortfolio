@@ -38,19 +38,3 @@ if (localStorage.getItem('theme') === 'dark') {
     html.classList.add('dark');
     themeIcon.className = 'fas fa-sun';
 }
-
-setTimeout(() => {
-    projectContainer.innerHTML = ''; // Clear loaders
-    projects.forEach(p => {
-        const card = `
-            <div class="group relative bg-white dark:bg-slate-800 p-4 rounded-[2rem] overflow-hidden shadow-xl" data-aos="fade-up">
-                <div class="h-64 bg-gradient-to-br ${p.gradient} rounded-[1.5rem] flex items-center justify-center text-white mb-6">
-                    <i class="fas fa-code text-6xl opacity-20"></i>
-                </div>
-                <h4 class="text-2xl font-black mb-2">${p.title}</h4>
-                <p class="text-slate-500">${p.tech}</p>
-            </div>
-        `;
-        projectContainer.innerHTML += card;
-    });
-}, 2000); // 2-second loading delay
